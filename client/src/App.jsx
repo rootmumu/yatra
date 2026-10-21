@@ -12,7 +12,6 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
-import PWAInstallPrompt from './components/common/PWAInstallPrompt';
 import PWAInstallModal from './components/common/PWAInstallModal';
 
 export default function App() {
@@ -32,7 +31,6 @@ export default function App() {
               <Route path="/admin" element={<AdminDashboardPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-            <PWAInstallPrompt />
             <PWAInstallModal />
           </BrowserRouter>
         </FavoritesProvider>

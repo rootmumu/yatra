@@ -98,18 +98,6 @@ export default function Navbar() {
 
             {/* Desktop Right CTAs */}
             <div className="hidden lg:flex items-center gap-2.5">
-              {/* Desktop PWA Install Button */}
-              {!isInstalled && (
-                <button
-                  type="button"
-                  onClick={openInstallModal}
-                  className="px-3 py-1.5 rounded-full bg-emerald-950/70 hover:bg-emerald-900 border border-emerald-500/40 text-emerald-300 text-xs font-semibold flex items-center gap-1.5 transition-all hover:scale-105 shadow-sm cursor-pointer"
-                  title="Install YATHRA Progressive Web App"
-                >
-                  <Download className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Install App</span>
-                </button>
-              )}
 
               {/* Instagram link */}
               <a
@@ -156,19 +144,8 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile Actions: Prominent PWA Install + Favorites + Hamburger */}
+            {/* Mobile Actions: Favorites + Hamburger */}
             <div className="flex items-center gap-1.5 md:hidden">
-              {!isInstalled && (
-                <button
-                  type="button"
-                  onClick={openInstallModal}
-                  className="px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#d97706] to-[#e59325] hover:from-[#c26500] hover:to-[#d97706] text-white text-xs font-bold tracking-wide shadow-md flex items-center gap-1 active:scale-95 transition-all cursor-pointer border border-amber-400/30"
-                  title="Install YATHRA Progressive Web App"
-                >
-                  <Download className="w-3.5 h-3.5 text-white" />
-                  <span>Install App</span>
-                </button>
-              )}
 
               <Link
                 to="/stays?favorites=true"

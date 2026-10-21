@@ -1,0 +1,55 @@
+{
+  "name": "YATHRA — Nature Stays, Cabins & Resorts",
+  "short_name": "YATHRA",
+  "description": "Discover and book handpicked resorts, A-frame cabins, camping tents, and plantation homestays in Kerala & South India.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#0a231b",
+  "orientation": "portrait-primary",
+  "categories": ["travel", "lifestyle", "hospitality"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Explore Stays",
+      "short_name": "Stays",
+      "description": "Browse resorts, cabins and villas",
+      "url": "/stays",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Saved Favorites",
+      "short_name": "Saved",
+      "description": "View your saved stays",
+      "url": "/stays?favorites=true",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Experiences",
+      "short_name": "Experiences",
+      "description": "Explore mountain and monsoon camps",
+      "url": "/experiences",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}

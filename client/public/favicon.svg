@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#e59325" />
+  <circle cx="50" cy="50" r="44" fill="#f49c18" />
+  <circle cx="28" cy="24" r="8" fill="#fef08a" />
+  <polygon points="12,78 38,42 62,78" fill="#1b4d3e" />
+  <polygon points="38,42 46,54 36,54" fill="#e2e8f0" />
+  <polygon points="40,78 65,34 90,78" fill="#0d221a" />
+  <polygon points="65,34 74,48 60,48" fill="#ffffff" />
+  <text x="50" y="90" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle" letter-spacing="2">YATHRA</text>
+</svg>

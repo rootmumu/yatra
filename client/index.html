@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>YATHRA | Find Your Escape — Luxury Resorts, A-Frames & Homestays</title>
+    <meta name="description" content="Discover extraordinary stays, hidden mountain cabins, camping tents, and luxury homestays across Munnar, Wayanad, Kuttikkanam, Vagamon and South India." />
+    
+    <!-- PWA & Mobile Web App Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0a231b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YATHRA" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="YATHRA — Find Your Escape" />
+    <meta property="og:description" content="Cinematic nature stays, private pool villas, A-frame cabins, and forest camping." />
+    <meta property="og:image" content="/icons/icon-512.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#faf8f5] text-[#1a1f1d] font-sans antialiased selection:bg-[#1b4d3e] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Register PWA Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => console.log('🌿 YATHRA PWA ServiceWorker active:', reg.scope))
+            .catch((err) => console.warn('PWA registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

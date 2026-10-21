@@ -1,0 +1,16 @@
+{
+  "name": "yathra-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix client install --legacy-peer-deps && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "server": "node server/server.js",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "install:all": "npm install && npm --prefix client install --legacy-peer-deps && npm --prefix server install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
